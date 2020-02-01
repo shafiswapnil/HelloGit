@@ -1,0 +1,199 @@
+LESSON 01 [what is git and why]
+-----------------------------------------------------------------
+1 commit - record the local works
+2 push - push files to the server
+3 pull - pulling files into my machine form the server
+
+1 status - project status
+2 add - add file
+3 diff
+4 log - get log about commits
+5 show
+6 reset
+7 branch
+8 merge
+9 stash - revert what you have done
+
+
+LESSON 02 [init, commit, diff, log]
+-----------------------------------------------------------------
+to start, use:
+	git init
+
+to add file, use:
+	git add <filename>
+
+to see status, use:
+	git status
+
+to commit, use:
+	git commit -m "what you've done"
+
+to see difference after modification, use:
+	git diff
+
+now to commit again, use:
+	git commit -m "comment" <filename.ext>
+
+to commit two files at once, use:
+	git commit -m "comment" <file1> <file2>
+	git commit -am "comment"
+
+to view the log of commits you've made
+	git log
+
+to view what you've done on a particular commit
+	git show 144a2baf
+
+
+LESSON 03 [go back to prev commit, reset, amend]
+-----------------------------------------------------------------
+
+======= CHECKOUT =======
+
+to completely go to a particular commit,
+	git checkout cf0000
+
+		you'll see the only file/changes what was made on cf0000
+			cat <filename>
+			ls
+		to return back to master branch,
+			git checkout master
+
+to view current branch
+	git branch
+
+to view a files log
+	git log <filename>
+
+to see only a file in commit state
+	git checkout bd616a <filename>
+
+		to return back to master,
+			git checkout master -f
+
+======= RESET =======
+
+to undo a accidental commit, you can reset them to previous commit
+	reset works in two ways. (1) soft reset (2) hard reset
+
+		(1) reset --soft
+			if you want go to previous commit, then remove the accidental commit.
+			SOFT RESET WILL RESET TO ITS PREVIOUS, BUT WILL KEEP THE LINES WHOM ARE ACCIDENTAL
+				git reset --soft 171abcd		[171abcd is the previous good]
+
+			to see what's been reverted,
+				git diff HEAD
+
+		(2) reset --hard
+			git reset --hard 2e8af
+
+			THE ACCIDENTAL COMMIT WILL BE NOW COMLETELY DISAPPEARED.
+
+to see what we've done so far
+	git reflog
+
+return back to good going commit
+	| git reflog
+	| git reset HEAD@{1}
+	| git reset --hard
+
+WARNING
+1 Don't reset if you have push(ed)/publish(ed) any file.
+2 Reset only those file whom are not push(ed).
+3 Use revert in situation of push/publish.
+
+======= AMEND =======
+
+assume that, we have commited a file. but after that you remember that you have to edit some more on that commit, then you can use {git commit --amend}
+
+we use amend to bind new edits of file to previous commit
+	git vi text2.txt
+	git add text2.txt
+	git log [assume that last commit hash was 8d5f9]
+	git commit --amend
+	git log [commit 8d5f9cd will get a new hash now]
+	git show <new hash>
+
+
+LESSON 4 [git stash and clean]
+-----------------------------------------------------------------
+
+======= STASH =======
+
+to save an experimental work in git (meaning, excluding git commit or delete)
+	git shash
+	cat script.js
+
+to apply latest saved stash into file, then
+	git stash pop/apply
+
+to see saved stash list,
+	git stash list
+
+to apply stash from the list then,
+	git stash pop stash@{1}
+
+now let's commit the latest file,
+	git commit -am "smart summation using math reduce"
+
+if you want to clear the list of git stash, then,
+	git stash clear
+
+======= CRUSH COURSE =======
+
+	echo "another file created by echo" > another.txt
+
+======= CRUSH COURSE =======
+
+======= GIT CLEAN =======
+
+Situation > think of two files named '1.txt' and '2.txt' are untracked in working directory. and you need to remove those file from working directory. so rather deleting those files separately, we can do something like,
+	git clean -f 		[risky!]
+
+	BUT HEY THERE WAIT!!
+	git clean -f is risky. because it will delete all those file whom are untracked. so you can just dry run this command by,
+		git clean -f -n
+	this will show those file whom are going to be deleted.
+
+	after dry run, now you can clean!
+
+
+LESSON 05 [git remote,push and pull]
+-----------------------------------------------------------------
+
+pull - pulls the latest working directory into local
+push - push codes to the internet
+remote - where we actually push codes to the internet, that is called remote. it's not nessesary to think that we have to host our codes to internet, rather we can host them in intranet also.
+
+To start using git remote, you can do it in an exsisting file or on a new file.
+
+To start a new project, all you have to do is to run,
+	git clone git@github.com:shafiswapnil/gittest.git <folderName>
+
+Or on an exsisting project, you will have to,
+	git remote add origin git@github.com:shafiswapnil/gittest.git
+	| Here I named my GitHub remote by 'origin'. You can name it anything. But 'origin' is mostly used.
+
+To view all remotes added in a project, you can run
+	git remote show
+
+To view remote url then,
+	git remote show origin
+
+To Push code to the server, you have to run
+	git push origin master
+
+To Pull code from server, you have to run
+	git pull origin master
+
+
+LESSON 06 [gitignore file]
+-----------------------------------------------------------------
+
+.gitignore file
+
+
+LESSON 07 [fixing conflicts]
+-----------------------------------------------------------------
+
