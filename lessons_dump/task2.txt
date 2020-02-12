@@ -5,3 +5,8 @@ Twelve
 Thirteen
 Fourteen
 
+# TESTING AMEND
+# if i want this file to go with task1.txt (some partial commit) commit,
+# then we'll use amend
+
+some change 
