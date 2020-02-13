@@ -193,12 +193,9 @@ LESSON 06 [gitignore file]
 
 .gitignore file
 
-
 Benefits of .gitignore file
 	> the file name or extensions you specify in this file, those won't be uploaded to git remote.
 	> also, git clean -f won't clear those specified files
-
-
 
 
 LESSON 07 [fixing conflicts]
