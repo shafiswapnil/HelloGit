@@ -14,7 +14,6 @@ if ($spray1 == "off" && $spray2 == "off" && $spray3 == "off"){
 	exit();
 }
 
-// response array
 
 
 if( isset($_POST['left']) && isset($_POST['right']) ) {
@@ -46,3 +45,9 @@ if( isset($_POST['left']) && isset($_POST['right']) ) {
 
 $con -> close();
 ?>
+
+<script>
+	if( window.history.replaceState ) {
+		window.history.replaceState( null, null, window.location.href );
+	}
+</script>
