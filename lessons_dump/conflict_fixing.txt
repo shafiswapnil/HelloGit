@@ -1,1 +1,4 @@
 # Experimenting with Git conflict fixing
+
+Hello from junk branch!
+bla bla bla bla.....
