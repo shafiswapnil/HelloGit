@@ -202,6 +202,26 @@ Benefits of .gitignore file
 LESSON 07 [fixing conflicts]
 -----------------------------------------------------------------
 
+If a situation occurs, where there is different two or more branch, working in a same file, even in the same line, a conflict occurs in between them when merging with another branch.
+Let's say we want to merge 'junk' branch with 'master'. And there's a file named 'conflict_fixing.txt'. In that file, in line 2 = master added some texts and also junk added some text.
+So, when we will be merging them, there will be a conflict.
+Let's see the commands:
+	[master]
+	code conflict_fixing.txt
+	git add .
+	git commit -m "version 1 [master]" conflict_fixing.txt
+
+	[junk]
+	code conflict_fixing.txt
+	git commit -m "version 1 [junk]" conflict_fixing.txt
+
+	[LET'S MERGE!]
+	git checkout master
+	[master] git merge junk
+	[master] git commit -m "conflict fixed" conflict_fixing.txt 
+
+	Here when you will use `[master] git merge junk` then git will show a message to resolve the conflict. If you'll closely you will understand what to do!
+
 
 LESSON # [branch]
 -----------------------------------------------------------------
