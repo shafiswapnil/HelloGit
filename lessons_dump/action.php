@@ -14,6 +14,7 @@ if ($spray1 == "off" && $spray2 == "off" && $spray3 == "off"){
 	exit();
 }
 
+// response array for collecting feedbacks
 $response = array();
 
 if( isset($_POST['left']) && isset($_POST['right']) ) {
@@ -47,6 +48,7 @@ $con -> close();
 ?>
 
 <script>
+	// restrict form re-submission
 	if( window.history.replaceState ) {
 		window.history.replaceState( null, null, window.location.href );
 	}
