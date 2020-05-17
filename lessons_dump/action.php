@@ -14,7 +14,7 @@ if ($spray1 == "off" && $spray2 == "off" && $spray3 == "off"){
 	exit();
 }
 
-
+$response = array();
 
 if( isset($_POST['left']) && isset($_POST['right']) ) {
 	$motorL = $_POST['left'];
