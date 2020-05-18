@@ -223,7 +223,7 @@ Let's see the commands:
 	Here when you will use `[master] git merge junk` then git will show a message to resolve the conflict. If you'll closely you will understand what to do!
 
 
-LESSON # [branch]
+LESSON # [branch] [LOCAL]
 -----------------------------------------------------------------
 
 to view branch list:
@@ -237,4 +237,72 @@ to create new branch:
 
 merge from one branch to another:
 	git merge <branch_name>
+
+to delete a branch:
+	git branch -d <branch_name>
+
+	IN ACTION:
+	git checkout -b deleteme
+	git checkout master
+	git branch -d deleteme
+
+
+LESSON # [tag]
+-----------------------------------------------------------------
+
+REF: https://www.youtube.com/watch?v=govmXpDGLpo
+Tagging in Git or any other VCS refers to creating specific points in history for your repository/data.
+This is usually done to mark release points
+
+When to create TAGs
+	1. When you want to create a release point for a stable version of your code
+	2. When you want to create historic point for your code/data that you can refer a any future time (to restore your data)
+
+An annotated tag
+	git tag -a v1.0 -m "ver 1 of .."
+	Annotated tags are stored as full objects in the Git database. To reiterate, They store extra meta data such as: the tagger name, email, and date. Similar to commits and commit messages Annotated tags have a tagging message.
+
+(( BTW, TAGS DON'T COVER ALL THE COMMIT, IT ONLY MARKS THE LATEST COMMIT. ))
+
+to create a git tag:
+	git tag <name of the tag>
+
+display or show tag:
+	git tag
+	git show v1.0
+	git tag -l "v1.*"
+
+Push tags to remote:
+	git push origin <tag-name>
+
+	**for pushing all the tags:
+	git push origin --tags
+	git push --tags
+
+Delete tags (if required only)
+	**to delete tags from LOCAL
+	git tag -d v1.0
+	git tag --delete v1.0
+
+Delete tags (if required only)
+	**to delete tags from REMOTE
+	git push origin -d v1.0
+	git push origin --delete v1.0
+	git push origin :v1.0
+
+Delete tags (if required only)
+	** to delete multiple tags at once:
+	git tag -d v1.0 v1.1
+	git push origin -d v1.0 v1.1
+
+How to checkout TAGs (when required)
+	- We cannot create checkout tags in git
+	- we can createbranch from a tag and checkout the branch
+	SYNTAX: git checkout -b <branch name> <tag name>
+	EXAMPLE: git checkout -b ReleaseVer1 v1.0
+
+Can I create a tag from some past commtit?
+	Yes.
+	SYNTAX: git tag <tag name> <commit reference>
+	EXAMPLE: git tag v1.2 784508
 
