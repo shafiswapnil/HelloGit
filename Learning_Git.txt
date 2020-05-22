@@ -188,6 +188,10 @@ To Push code to the server, you have to run
 To Pull code from server, you have to run
 	git pull origin master
 
+In case if the name of the repo has been changed, then you have to rename git remote:
+	git remote -v
+	git remote set-url origin <newUrl>
+
 
 LESSON 06 [gitignore file]
 -----------------------------------------------------------------
