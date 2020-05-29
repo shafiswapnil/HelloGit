@@ -251,6 +251,40 @@ to delete a branch:
 	git branch -d deleteme
 
 
+LESSON # [branch] [LOCAL]
+-----------------------------------------------------------------
+
+to get all the branches that are online, but git pull isn't working, then use:
+	git fetch
+
+to view all the branches:
+	git branch -a
+
+if a branch was created in remote then, it'll ask for pushing the lateset commit to the remote also (which doesn't work in local). use:
+	git push
+
+if any file was edited in remote (in other branch), you'll have to pull those changes in your machine by using:
+	git pull origin <branch_name>
+
+to delete a branch from remote, working while in local, you need to do these things:
+	# you're recommanded to pull the branch from remote first
+	git pull
+	git branch -a
+	git checkout <branch_name>
+	git checkout master
+	git branch -d <branch_name>
+	git push origin :<branch_name>
+
+	EXAMPLE:
+	git checkout deleteme
+	git checkout master
+	git branch -d deleteme
+	git push origin :deleteme
+
+to push a local branch to remote:
+	git push origin <branch_name>
+
+
 LESSON # [tag]
 -----------------------------------------------------------------
 
