@@ -302,40 +302,38 @@ An annotated tag
 
 (( BTW, TAGS DON'T COVER ALL THE COMMIT, IT ONLY MARKS THE LATEST COMMIT. ))
 
-to create a git tag:
+to CREATE a git tag:
 	git tag <name of the tag>
 
-display or show tag:
+DISPLAY or SHOW tag:
 	git tag
 	git show v1.0
 	git tag -l "v1.*"
 
-Push tags to remote:
+PUSH tags to remote:
 	git push origin <tag-name>
 
 	**for pushing all the tags:
 	git push origin --tags
 	git push --tags
 
-Delete tags (if required only)
-	**to delete tags from LOCAL
+DELETE TAGS (if required only)
+	**** to delete tags from LOCAL
 	git tag -d v1.0
 	git tag --delete v1.0
 
-Delete tags (if required only)
-	**to delete tags from REMOTE
+	**** to delete tags from REMOTE
 	git push origin -d v1.0
 	git push origin --delete v1.0
 	git push origin :v1.0
 
-Delete tags (if required only)
-	** to delete multiple tags at once:
+	**** to delete multiple tags at once:
 	git tag -d v1.0 v1.1
 	git push origin -d v1.0 v1.1
 
 How to checkout TAGs (when required)
-	- We cannot create checkout tags in git
-	- we can createbranch from a tag and checkout the branch
+	- We cannot checkout tags in git
+	- we can create branch from a tag and checkout the branch
 	SYNTAX: git checkout -b <branch name> <tag name>
 	EXAMPLE: git checkout -b ReleaseVer1 v1.0
 
