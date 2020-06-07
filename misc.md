@@ -66,3 +66,8 @@ To Pull code from server, you have to run
 ```sh
 $ git pull origin master
 ```
+
+
+
+### Notice
+These informations were moved from the "Learning_Git.txt" file into this "misc.md" file.
