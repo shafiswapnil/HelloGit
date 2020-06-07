@@ -342,3 +342,10 @@ Can I create a tag from some past commtit?
 	SYNTAX: git tag <tag name> <commit reference>
 	EXAMPLE: git tag v1.2 784508
 
+to change the git tag from a particular commit to another commit, then:
+	git tag -f stable <new_commit_hash>
+
+and push the force tag change to remote:
+	git push --force origin stable
+
+
