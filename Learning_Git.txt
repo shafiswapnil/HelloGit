@@ -251,7 +251,7 @@ to delete a branch:
 	git branch -d deleteme
 
 
-LESSON # [branch] [LOCAL]
+LESSON # [branch] [REMOTE]
 -----------------------------------------------------------------
 
 to get all the branches that are online, but git pull isn't working, then use:
