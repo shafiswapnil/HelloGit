@@ -366,3 +366,10 @@ LESSON # [Compare commit]
 
 First of all you'll have to choose a commit which you need to compare. After choosing commit, copy the commit hash and go to Pull Request tab and paste the commit hash to 'compare' and select a base. You'll see what you see. That's all.
 
+
+LESSON # [Compare tags]
+-----------------------------------------------------------------
+
+Same as before, go to Pull Request tab and select 'base', 'compare' with your prefered tags. And you know, you'll see what you see. ;)
+
+
