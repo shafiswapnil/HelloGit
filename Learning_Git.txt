@@ -380,3 +380,9 @@ In general, selecting/writting options for 'base' and 'compare' shows the differ
 For example, if we want to see what happend to a branch called 'dev' one day before, we can write dev@{1day} in compare section. and in base section select master.
 You'll know what's happening.
 
+
+LESSON # [Fork]
+-----------------------------------------------------------------
+
+Forking in GitHub is actually copying a repository from another owner in my repository. One thing to note here, the owner won't know (maybe.. not sure!). 
+
