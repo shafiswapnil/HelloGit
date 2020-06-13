@@ -392,3 +392,9 @@ LESSON # [GitHub Graph]
 
 Go to your repository and click Insights tab. You'll see every single history with proper visualization like, Pulse, Graph on contributors, Traffic, Commit graph, Code frequency, Dependency Graph, Network, Forks.
 
+
+LESSON # [Adding Contributor]
+-----------------------------------------------------------------
+
+Go to your repository and click Settings, in left you'll see an opting named Collaborators. There you'll be asked to enter username/full name/email address of the collaborator, whom you want to add.
+
