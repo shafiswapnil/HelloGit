@@ -358,6 +358,11 @@ firstly go to your GitHub then get into the working repository. Now point out th
 LESSON # [Compare between branch with pull request]
 -----------------------------------------------------------------
 
-Go to GitHub and open your repository, click New Pull Request and select/write options for base and compare. You'll see what to merge, blame, and stuffs.
+Go to GitHub and open your repository, click New Pull Request and select/write options for 'base' and 'compare'. You'll see what to merge, blame, and stuffs.
 
+
+LESSON # [Compare commit]
+-----------------------------------------------------------------
+
+First of all you'll have to choose a commit which you need to compare. After choosing commit, copy the commit hash and go to Pull Request tab and paste the commit hash to 'compare' and select a base. You'll see what you see. That's all.
 
