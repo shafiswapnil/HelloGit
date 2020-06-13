@@ -355,3 +355,9 @@ LESSON # [Create Release]
 firstly go to your GitHub then get into the working repository. Now point out the 'Releases' tab on the repo. Go there and click on 'Tags' Button. Find the tag you want to work with. And look left, you'll find more options there. Click 'Create Release'. Now you'll know what to do! 🥂
 
 
+LESSON # [Compare between branch with pull request]
+-----------------------------------------------------------------
+
+Go to GitHub and open your repository, click New Pull Request and select/write options for base and compare. You'll see what to merge, blame, and stuffs.
+
+
