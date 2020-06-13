@@ -398,3 +398,8 @@ LESSON # [Adding Contributor]
 
 Go to your repository and click Settings, in left you'll see an opting named Collaborators. There you'll be asked to enter username/full name/email address of the collaborator, whom you want to add.
 
+
+LESSON # [Labels and Milestones] [Create issue]
+-----------------------------------------------------------------
+
+In your repository, click Issues, you'll see find some buttons named Labels and Milestones. Nothing to say in words how these works... Please explore yourself or search on Google.
