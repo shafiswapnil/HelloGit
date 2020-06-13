@@ -403,3 +403,14 @@ LESSON # [Labels and Milestones] [Create issue]
 -----------------------------------------------------------------
 
 In your repository, click Issues, you'll see find some buttons named Labels and Milestones. Nothing to say in words how these works... Please explore yourself or search on Google.
+
+
+LESSON # [Close issue] [Associate commit with issue]
+-----------------------------------------------------------------
+
+If you have issues in repository, you can close them in two ways.
+	- One is using GitHub Interface and
+	- Another is to add "close #{issue-number}" to solution commit message of the issue.
+	For example, in your git commit message write [ git commit -am "fixed the problem. close #2" ]
+
+
