@@ -373,3 +373,10 @@ LESSON # [Compare tags]
 Same as before, go to Pull Request tab and select 'base', 'compare' with your prefered tags. And you know, you'll see what you see. ;)
 
 
+LESSON # [Advanced comparison]
+-----------------------------------------------------------------
+
+In general, selecting/writting options for 'base' and 'compare' shows the difference/Comparing Changes. But we can modify the options for 'base' and 'compare' a little bit for more info on changes.
+For example, if we want to see what happend to a branch called 'dev' one day before, we can write dev@{1day} in compare section. and in base section select master.
+You'll know what's happening.
+
