@@ -384,5 +384,11 @@ You'll know what's happening.
 LESSON # [Fork]
 -----------------------------------------------------------------
 
-Forking in GitHub is actually copying a repository from another owner in my repository. One thing to note here, the owner won't know (maybe.. not sure!). 
+Forking in GitHub is actually copying a repository from another owner in my repository.
+
+
+LESSON # [GitHub Graph]
+-----------------------------------------------------------------
+
+Go to your repository and click Insights tab. You'll see every single history with proper visualization like, Pulse, Graph on contributors, Traffic, Commit graph, Code frequency, Dependency Graph, Network, Forks.
 
