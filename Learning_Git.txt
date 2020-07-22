@@ -202,6 +202,13 @@ Benefits of .gitignore file
 	> the file name or extensions you specify in this file, those won't be uploaded to git remote.
 	> also, git clean -f won't clear those specified files
 
+[COPIED FROM https://www.pluralsight.com/guides/how-to-use-gitignore-file]
+if you want to find out, a particular file is ignored or not, then run this command:
+	git check-ignore -v example.log
+
+	The output will look something like this:
+	.gitignore:1:*.log       example.log
+
 
 LESSON 07 [fixing conflicts]
 -----------------------------------------------------------------
